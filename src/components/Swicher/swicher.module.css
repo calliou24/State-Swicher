@@ -1,0 +1,153 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.mainTitle{
+    color: var(--dark-grayish-blue);
+    font-weight: bolder;
+}
+
+.selectionCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 250px;
+    color: var(--light-grayish-blue);
+}
+
+.status {
+    text-align: center;
+}
+
+
+.title {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.contentCont {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin: 70px 0 0 0 ;
+}
+.firstCont {
+    display:grid;
+    place-items: center;
+}
+
+
+.card {
+    height: 360px;
+    min-width: 250px;
+    border-radius: 7px;
+    padding:10px;
+    background:#fff;
+    box-shadow: 0 0px 30px 0 #0004 ;
+    position: relative;
+    color: var(--dark-grayish-blue);
+}
+
+.benefits {
+    display: grid;
+    place-items: center;
+    list-style: none;
+    text-align: center;
+    padding:0;
+}
+.item {
+    font-weight: bold;
+    font-size: .9rem;
+    padding:14px 0 ;
+}
+
+.button{
+    border: none;
+    width: 90%;
+    margin:auto;
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+    background-image: var(--gradient);
+    color: var(--very-light-grayish-blue);
+    padding:10px 0;
+    border-radius:3px ;
+    cursor:  pointer;
+    font-weight: bolder;
+    font-size: .7rem;
+    transition: all .2s;
+}
+.button:hover {
+    background-image:none;
+    color: var(--grayish-blue);
+    border: 1px solid var(--grayish-blue);
+}
+
+.ballCont {
+    width: 50px;
+    height:20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding:4px;
+    cursor:pointer;
+    background:var(--gradient);
+    position: relative;
+}
+
+.ball {
+    width:20px ;
+    height:20px;
+    position: absolute;
+    background:#fff;
+    border-radius: 50%;
+    transition: all .2s;
+
+}
+
+
+
+#ballLeft {
+    transform:translateX(30px);
+    transition: all .2s;
+}
+
+#price {
+    font-size: 3.2rem;
+    font-weight: bolder;
+    transition: all .2s;
+}
+#buttonSelected {
+    background-image: none;
+    background-color: var(--very-light-grayish-blue);
+    color: var(--grayish-blue);
+    transition: all .2s;
+}
+
+#buttonSelected:hover {
+    background-image: none;
+    background-color: transparent;
+    color: var(--very-light-grayish-blue);
+    outline:1px solid var(--very-light-grayish-blue);
+
+}
+#selected {
+    height: 390px;
+    min-width: 250px;
+    background-image:var(--gradient);
+    position: relative;
+    z-index: 1000;
+    color: var(--very-light-grayish-blue);
+}
+
+
+@media screen and (max-width : 900px){
+    .contentCont {
+        flex-direction: column;
+        row-gap: 20px;
+        margin: 50px 0;
+    }
+}
